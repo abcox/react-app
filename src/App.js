@@ -1,6 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { /* Fragment, */ Component } from "react";
+import logo from "./logo.svg";
+//import { Timeline } from "antd";
+import "./App.css";
+import timeline from "./components/timeline/timeline";
+
+/* class App extends Component {
+  state = {};
+  render() {
+    return <timeline />;
+  }
+}
+
+export default App; */
 
 function App() {
   return (
@@ -19,6 +30,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <timeline />
     </div>
   );
 }
